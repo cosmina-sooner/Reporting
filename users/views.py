@@ -11,4 +11,4 @@ def register(request):
            
     else:
         form = UserRegisterForm()
-    return render(request, '/home/cosmina/Reporting/users/templates/registration.html', {'form': form})
+    return render(request, 'core/registration.html', {'form': form})
