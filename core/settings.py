@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'core',
     'users',
-    'django_registration',
+    'dashboard',
     
     
 
@@ -143,3 +143,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
 )
+
+
+LOGIN_REDIRECT_URL = 'homepage'
