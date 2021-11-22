@@ -1,0 +1,29 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'users/registration.css' %}">
+
+{% block content%}
+<div class="registration">
+    <div class="form">
+        <h2>Welcome to Sooner </h2>
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend ><h3>Register</h3></legend>
+                {{ form.as_p }}
+            </fieldset>
+                <button type="submit">
+                    Sign Up
+                </button>
+               
+                <small class="text-muted">
+                        Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+                </small>
+                
+            </div>
+           
+        </form>
+      
+    </div>
+</div>
+{% endblock content%}
+
