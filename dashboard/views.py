@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 # View for index page. 
 def homepage(request):
-  return render(request, 'core/homepage.html')
+  return render(request, 'dashboard/homepage.html')
